@@ -1,3 +1,13 @@
-- clean: []
-- link: {}
+- defaults:
+    link:
+        relink: true
+        create: true
+
+- clean: ['~']
+
+- link:
+    ~/Documents/WindowsPowerShell/profile.ps1: profile.ps1
+    ~/Documents/PowerShell/profile.ps1: profile.ps1
+    ~/AppData/Roaming/doublecmd/doublecmd.xml:
+
 - shell: []
