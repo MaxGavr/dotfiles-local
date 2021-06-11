@@ -1,3 +1,13 @@
-- clean: []
-- link: {}
-- shell: []
+- defaults:
+    link:
+        relink: true
+        create: true
+
+- clean: ['~']
+
+- link:
+    ~/.zshrc:
+
+- shell:
+    - [chsh -s $(which zsh), Make zsh default shell]
+    - [sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)", Install oh-my-zsh]
