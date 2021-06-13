@@ -11,7 +11,9 @@
 
 - link:
     ~/.zshrc:
+    ~/.p10k.zsh:
 
 - shell:
     - [chsh -s $(which zsh), Make zsh default shell]
     - [sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc, Install oh-my-zsh]
+    - ["cd ~ && git clone --depth=1 https://github.com/romkatv/powerlevel10k.git '.oh-my-zsh/custom/themes/powerlevel10k'", Install powerlevel10k]
